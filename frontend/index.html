@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tollywood RAG Chatbot</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="chat-panel" aria-label="Tollywood RAG chatbot">
+        <header class="chat-header">
+          <div>
+            <p class="eyebrow">RAG Chatbot</p>
+            <h1>Tollywood Film Industry</h1>
+          </div>
+          <div class="status" id="status">Checking backend...</div>
+        </header>
+
+        <div class="messages" id="messages" aria-live="polite">
+          <article class="message bot">
+            <div class="bubble">
+              Ask me about Telugu cinema history, directors, stars, films, music, fan culture, or pan-Indian releases.
+            </div>
+          </article>
+        </div>
+
+        <div class="suggestions" aria-label="Suggested questions">
+          <button type="button" data-question="What is Tollywood known for?">Overview</button>
+          <button type="button" data-question="Tell me about Baahubali and RRR.">Baahubali & RRR</button>
+          <button type="button" data-question="Who are important directors in Telugu cinema?">Directors</button>
+          <button type="button" data-question="How did Telugu cinema become pan-Indian?">Pan-Indian rise</button>
+        </div>
+
+        <form class="composer" id="chat-form">
+          <input
+            id="question"
+            name="question"
+            type="text"
+            autocomplete="off"
+            placeholder="Ask a Tollywood question..."
+            required
+          >
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
