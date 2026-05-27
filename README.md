@@ -19,7 +19,27 @@ The app uses a local knowledge base in `data/tollywood_kb.json`, retrieves the m
     └── styles.css
 ```
 
-## Run
+## Run With Streamlit
+
+Start the Streamlit app:
+
+```powershell
+streamlit run streamlit_app.py
+```
+
+Or run it with `uv`:
+
+```powershell
+uv run streamlit run streamlit_app.py
+```
+
+Then open the local URL shown in the terminal, usually:
+
+```text
+http://localhost:8501
+```
+
+## Run Backend and HTML Frontend
 
 Start the backend:
 
